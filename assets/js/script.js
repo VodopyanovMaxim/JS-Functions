@@ -20,7 +20,7 @@ while (loop) {
       const age = Number(
         prompt("Введіть вік для перевірки на те, чи є він працездатним:"),
       );
-      if (typeof age !== NaN && age > 0) {
+      if (!Number.isNaN(age) && age > 0) {
         if (isWorkingAgePerson(age)) {
           alert(`Людина віком ${age} є працездатною`);
         } else {
