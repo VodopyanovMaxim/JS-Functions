@@ -31,7 +31,6 @@ const checkMultiplicity = function (a, b) {
  * calculateSurfaceArea('cube', 0, 5); // 0
  * calculateSurfaceArea('cube', 5, 5); // 150
  */
-
 function calculateSurfaceArea(shapeType, param1, param2 = param1) {
   if (
     Number.isNaN(param1) ||
@@ -134,7 +133,7 @@ while (loop) {
         }
       } else {
         alert(
-          `Помилка обрахування площі для фігури ${shapeType} за параметрами '${arg1}' та '${arg2}'`,
+          `Помилка обрахування площі для фігури ${shapeType} за параметрами '${shapeArg1}' та '${shapeArg2}'`,
         );
       }
       break;
