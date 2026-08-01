@@ -1,3 +1,17 @@
+/**
+ * Розраховує площу поверхні заданої фігури
+ *
+ * @param {string} shapeType - задана фігура
+ * @param {number} param1 - довижна ребра кубу або радіус основи циліндру
+ * @param {number} param2 - висота циліндру
+ * @returns {number} - повертає площу поверхні фігури або 0, в залежності від коректності наданих даних
+ * @example
+ * calculateSurfaceArea('unknownShapeType', 5, 5); // 0
+ * calculateSurfaceArea('cube', 5, 0); // 0
+ * calculateSurfaceArea('cube', 0, 5); // 0
+ * calculateSurfaceArea('cube', 5, 5); // 150
+ */
+
 function calculateSurfaceArea(shapeType, param1, param2 = param1) {
   if (
     Number.isNaN(param1) ||
@@ -16,6 +30,17 @@ function calculateSurfaceArea(shapeType, param1, param2 = param1) {
   }
 }
 
+/**
+ * Розраховує кількість потрібних літрових банок фарби
+ *
+ * @param {number} area - площа поверхні фігури
+ * @param {number} layersCount - кількість шарів фарбування
+ * @returns {number} - повертає округлену до більшого, цілу кількість банок, необхідних для покраски фігури у задану кількість шарів
+ * @example
+ * calculatePaintBoxes(150, 0); // 0
+ * calculatePaintBoxes(0, 1); // 0
+ * calculatePaintBoxes(150, 1); // 15
+ */
 const calculatePaintBoxes = function (area, layersCount) {
   if (
     Number.isNaN(area) ||
