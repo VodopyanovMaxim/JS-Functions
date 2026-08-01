@@ -115,9 +115,9 @@ while (loop) {
       break;
     case 3:
       const shapeType = prompt("Виберіть форму фігури:");
-      const arg1 = Number(prompt("Введіть перший аргумент:"));
-      const arg2 = Number(prompt("Введіть другий аргумент:"));
-      const area = calculateSurfaceArea(shapeType, arg1, arg2);
+      const shapeArg1 = Number(prompt("Введіть перший аргумент:"));
+      const shapeArg2 = Number(prompt("Введіть другий аргумент:"));
+      const area = calculateSurfaceArea(shapeType, shapeArg1, shapeArg2);
       if (area > 0) {
         const layerCount = Number(
           prompt("Введіть потрібну кількість шарів покраски:"),
