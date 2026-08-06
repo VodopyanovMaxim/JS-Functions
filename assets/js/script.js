@@ -34,11 +34,11 @@ function calculateSurfaceArea(shapeType, param1, param2 = param1) {
   }
   if (shapeType === "cube") {
     return 6 * param1 ** 2;
-  } else if (shapeType === "cylinder") {
+  } 
+  if (shapeType === "cylinder") {
     return 2 * Math.PI * param1 * (param1 + param2);
-  } else {
-    return 0;
-  }
+  } 
+  return 0;
 }
 
 /**
