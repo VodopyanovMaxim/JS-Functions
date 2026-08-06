@@ -1,9 +1,5 @@
 function isWorkingAgePerson(age) {
-  if (age < 64 && age > 16) {
-    return true;
-  } else {
-    return false;
-  }
+  return age < 64 && age > 16;
 }
 
 const checkMultiplicity = function (a, b) {
@@ -11,11 +7,7 @@ const checkMultiplicity = function (a, b) {
     return null;
   }
   const remainder = a % b;
-  if (remainder > 0) {
-    return false;
-  } else {
-    return true;
-  }
+  return remainder === 0;
 };
 
 /**
